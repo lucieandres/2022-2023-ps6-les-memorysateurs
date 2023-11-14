@@ -1,0 +1,67 @@
+<div class="centered">
+  <div id="container-creer-patient">
+    <div id="container-donnee-patient">
+        <p id="text-nouveau-profil">NOUVEAU PROFIL</p>
+        <form id="form-nom-prenom" [formGroup]="patientForm">
+        <p class="donnee-patient">Prénom :</p>
+        <input class="input-identite" type="text" id="input-prenom"[formControlName]="'prenom'" (click)="erreurPrenomDisable()"/>
+        <p class="donnee-patient">Nom :</p>
+        <input class="input-identite" id="input-nom" type="text"[formControlName]="'nom'" (click)="erreurNomDisable()"/>
+        </form>
+        <div style="display: flex; align-content: flex-end; width: 100%">
+          <p class="donnee-patient">Stade de la maladie :</p>
+          <button id="info-stade" (click)="changeInfoBooleen()">+ d'infos</button>
+        </div>
+        <form id="container-radio-button" [formGroup]="patientForm">
+          <div class="stade">
+            <input type="radio" id="radio1" name="radio-group"  checked (click)="setStade()">
+            <label for="radio1" >Stade 3</label>
+          </div>
+          <div class="stade">
+            <input type="radio" id="radio2" name="radio-group"  (click)="setStade()">
+            <label for="radio2"  >Stade 4</label>
+          </div>
+          <div class="stade">
+            <input type="radio" id="radio3" name="radio-group" (click)="setStade()" >
+            <label for="radio3"  >Stade 5</label>
+          </div>
+        </form>
+    </div>
+
+
+    <form id="container-photo-patient" [formGroup]="patientForm">
+      <div id="photo">
+          <img  id="affichage-photo"/>
+      </div>
+      <label class="bouton-vert" id="charger-une-photo" for="photo-button">Charger une photo</label>
+      <input id="photo-button"type="file" (change)="afficherPhoto()" [formControlName]="'photo'"/>
+    </form>
+
+    <div id="bouton-en-plus">
+      <button class="bouton-rouge" id="supprimer-profil" *ngIf="patient != undefined" (click)="supprimerPatient()">Supprimer</button>
+      <button class="bouton-vert"  id="creer-profil" (click)="creerProfilPatient()">CREER LE PROFIL</button>
+    </div>
+  </div>
+</div>
+
+<button id="retour-creer-patient" class="bouton-vert" (click)="retour()">RETOUR</button>
+
+
+<div id="pop-up" [class.active]="info">
+  <div class="croix" (click)="changeInfoBooleen()"></div>
+  <div id="container-texte">
+    <div>
+      <p class="titre-stade"id="titre-stade-3">Stade 3 : déclin cognitif léger</p>
+      <p class="description-stade"id="description-stade-3">Lorsque les pertes de mémoire et les troubles cognitifs deviennent plus fréquents et commencent à être remarqués.</p>
+    </div>
+    <div>
+      <p class="titre-stade"id="titre-stade-4">Stade 4 : déclin cognitif modéré</p>
+      <p class="description-stade"id="description-stade-4">La personne présente clairement des signes de déficit mental et cognitif, indiquant un début de démence ou de maladie d'Alzheimer.</p>
+    </div>
+    <div>
+      <p class="titre-stade"id="titre-stade-5">Stade 5 : déclin cognitif relativement grave</p>
+      <p class="description-stade"id="description-stade-5">Le patient risque de ne plus être capable de s'acquitter normalement des tâches du quotidien.</p>
+    </div>
+  </div>
+</div>
+<div class="blur" [class.active]="info" (click)="changeInfoBooleen()"></div>

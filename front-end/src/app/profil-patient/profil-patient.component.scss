@@ -1,0 +1,193 @@
+.centered {
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-creer-patient{
+  display: grid;
+  //flex-direction: row;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr .1fr;
+  padding: 20px;
+  width: 1044px;
+  height: 525px;
+  position: relative;
+  background: #CFCFCF;
+  border-radius: 30px;
+  font-family: sans-serif;
+}
+#container-donnee-patient{
+  display: flex;
+  flex-direction: column;
+  // background: blue;
+  align-items: center;
+}
+
+#text-nouveau-profil{
+  font-size: 230%;
+  color: #006A52;
+  font-weight: 800;
+}
+#form-nom-prenom{
+  height: 90%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  &>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.align {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+}
+
+.donnee-patient{
+  align-self: baseline;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 0;
+}
+.input-identite{
+  position: relative;
+  align-self: baseline;
+  font-size: 20px;
+  width: 90%;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #006A52;
+  background-color: transparent;
+  font-weight: bold;
+  padding: 15px 20px;
+  margin-top: 5px;
+}
+
+#info-stade{
+margin-left: 10px;
+}
+#container-radio-button{
+  position: relative;
+  right: 6%;
+  display: grid;
+  grid-template-columns: repeat(2,1.3fr) 1.5fr repeat(2,1.3fr) 1.5fr repeat(2,1.3fr);
+  font-size: 130%;
+  font-weight: bold;
+}
+
+
+#container-photo-patient{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFFFFF;
+  border-radius: 17px;
+  width: 100%;
+  height: 85%;
+  padding: 20px 0;
+  //  background: red;
+}
+
+#photo {
+  overflow: hidden;
+  position: relative;
+  min-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img{
+  position:relative;
+  height: 70%;
+  width: 70%;
+}
+.bouton-vert{
+  background: #006A52;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 15px;
+  text-align: center;
+  margin: 0;
+}
+#modifier-le-profil{
+  border: none;
+  width: 90%;
+  font-size: 150%;
+  line-height: 200%;
+}
+
+app-info-stade{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(15%, -50%);
+}
+#supprimer-patient{
+  background: red;
+  position: absolute;
+  bottom: 87%;
+  left: 73%;
+  padding: .2% 1% .2% 1%;
+  color: #FFFFFF;
+  font-size: 200%;
+  font-weight: bold;
+  border-radius: 12px;
+  border: red;
+
+}
+
+#bouton-en-plus{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  grid-column: 1/3;
+  grid-row: 2;
+  font-family: sans-serif;
+  bottom: 0;
+  &>* {
+    font-size: 180%;
+    bottom: 0%;
+    background: #006A52;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 45%;
+    height: 80px;
+    border-radius: 20px;
+    border: #006A52;
+  }
+}
+
+.bouton-retour{
+  position: absolute;
+  bottom: 0%;
+  margin-bottom: 1.5%;
+  background: #006A52;
+  font-size: 32px;
+  font-weight: bold;
+  color: #FFFFFF;
+  width: 21%;
+  height: 80px;
+  border-radius: 20px;
+  border: #006A52;
+  margin: 15px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,54 @@
+$padding : 20px;
+
+.liste-patient {
+  padding: 50px 5%;
+  .bloc-scrollable {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 20px 0;
+    justify-content: flex-start;
+    border-radius: 12px;
+
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #CFCFCF;
+  border-radius: 30px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #006A52;
+  border-radius: 30px;
+  :hover {
+    background: #006A52;
+  }
+}
+
+.bloc-ajouter-patient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #CFCFCF;
+  border-radius: 20px;
+  min-width: 270px;
+  height: 500px;
+}
+
+.bouton-ajouter-patient {
+  color: #006A52;
+  font-weight: bold;
+  border: 4px #006A52 dashed;
+  border-radius: 12px;
+  width: 85%;
+  height: 90%;
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "temps": 11,
+    "essais": 2,
+    "erreurs": 0,
+    "indices": 0,
+    "nbCartes": 4,
+    "stade": 3,
+    "date": "Mon Jun 12 2023",
+    "patientId": "1686667237489",
+    "id": 1686581377282
+  },
+  {
+    "temps": 12,
+    "essais": 2,
+    "erreurs": 0,
+    "indices": 0,
+    "nbCartes": 4,
+    "stade": 3,
+    "date": "Mon Jun 12 2023",
+    "patientId": "1686667237489",
+    "id": 1686581510667
+  },
+  {
+    "temps": 12,
+    "essais": 2,
+    "erreurs": 0,
+    "indices": 0,
+    "nbCartes": 4,
+    "stade": 3,
+    "date": "Mon Jun 12 2023",
+    "patientId": "1686667237489",
+    "id": 1686582204049
+  },
+  {
+    "temps": 12,
+    "essais": 2,
+    "erreurs": 0,
+    "indices": 0,
+    "nbCartes": 4,
+    "stade": 3,
+    "date": "Mon Jun 12 2023",
+    "patientId": "1686667237489",
+    "id": 1686582668748
+  },
+  {
+    "temps": 83,
+    "essais": 7,
+    "erreurs": 3,
+    "indices": 2,
+    "nbCartes": 8,
+    "stade": 4,
+    "date": "Thu Jun 15 2023",
+    "patientId": "1686667283392",
+    "id": 1686831089759
+  },
+  {
+    "temps": 83,
+    "essais": 7,
+    "erreurs": 3,
+    "indices": 2,
+    "nbCartes": 8,
+    "stade": 4,
+    "date": "Thu Jun 15 2023",
+    "patientId": "1686667283392",
+    "id": 1686831259481
+  },
+  {
+    "temps": 32,
+    "essais": 4,
+    "erreurs": 0,
+    "indices": 1,
+    "nbCartes": 8,
+    "stade": 3,
+    "date": "Thu Jun 15 2023",
+    "patientId": "1686667237489",
+    "id": 1686833562605
+  },
+  {
+    "temps": 27,
+    "essais": 4,
+    "erreurs": 0,
+    "indices": 0,
+    "nbCartes": 8,
+    "stade": 3,
+    "date": "Thu Jun 15 2023",
+    "patientId": "1686667237489",
+    "id": 1686833594186
+  }
+]
